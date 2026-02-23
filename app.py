@@ -185,7 +185,7 @@ if st.button("Analyze"):
     fig_radar.add_trace(go.Scatterpolar(r=values, theta=categories, fill='toself'))
     fig_radar.update_layout(polar=dict(radialaxis=dict(visible=True)), showlegend=False)
 
-    st.plotly_chart(fig_radar, use_container_width=True)
+    st.plotly_chart(fig_radar, use_container_width="always")
 
     # ---------------------------------------------------
     # EXPLAINABILITY
@@ -271,3 +271,4 @@ st.markdown("""
 5. Risk Classification Layer  
 6. Visualization & Drift Tracking  
 """)
+
